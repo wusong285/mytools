@@ -1,0 +1,9 @@
+mysql 查看数据库中所有表的记录数
+
+use information_schema;
+
+select table_name,table_rows from tables
+
+where TABLE_SCHEMA = 'testdb'
+
+order by table_rows desc;
